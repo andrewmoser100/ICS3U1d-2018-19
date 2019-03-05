@@ -26,7 +26,12 @@ def draw_rollinghills():
 
 def draw_tree():
     arcade.draw_circle_filled(200, 200, 100, arcade.color.DARK_GREEN)
-    arcade.draw_rectangle_filled(50, 10, 300, 300, arcade.color.BROWN)
+    arcade.draw_rectangle_filled(200, 10, 50, 300, arcade.color.BROWN)
+    arcade.draw_circle_filled(200, 100, 20, arcade.color.DARK_BROWN)
+
+def draw_apple():
+    arcade.draw_circle_filled(150, 200, 10, arcade.color.RED)
+    arcade.draw_circle_filled(250, 240, 10, arcade.color.RED)
 
 def main():
     arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing with Functions")
@@ -37,6 +42,7 @@ def main():
     draw_cloud()
     draw_rollinghills()
     draw_tree()
+    draw_apple()
 
     # Finish and run
     arcade.finish_render()
